@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title">
+
+    <Button
+        android:id="@+id/title_back"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/back_bg"
+        />
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="荣耀俄罗斯"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/title_menu"
+        android:layout_width="16dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/menu_bg"
+        />
+</LinearLayout>
