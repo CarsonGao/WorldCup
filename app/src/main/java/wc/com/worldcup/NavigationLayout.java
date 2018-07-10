@@ -1,6 +1,5 @@
 package wc.com.worldcup;
 
-import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -13,7 +12,7 @@ public class NavigationLayout extends LinearLayout {
 
     public NavigationLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        LayoutInflater.from(context).inflate(R.layout.navigation, this);
+        LayoutInflater.from(context).inflate(R.layout.navigation1, this);
         Button home = findViewById(R.id.home);
         Button saicheng = findViewById(R.id.saicheng);
         Button team = findViewById(R.id.team);

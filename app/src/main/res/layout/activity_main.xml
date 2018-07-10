@@ -7,27 +7,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <wc.com.worldcup.TitleLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:layout_gravity="center">
-
-
-    </LinearLayout>
-
-    <LinearLayout
+    <wc.com.worldcup.NavigationLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom" />
 
-        <wc.com.worldcup.NavigationLayout
-            android:layout_width="match_parent"
-            android:layout_height="209dp" />
-    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
 </LinearLayout>
