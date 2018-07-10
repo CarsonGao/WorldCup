@@ -54,7 +54,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent);
                 finish();
             }
-        }, 5000);//延迟5S后发送handler信息
+        }, 1000);//延迟5S后发送handler信息
     }
 
     private void initView() {

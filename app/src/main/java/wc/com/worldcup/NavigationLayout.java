@@ -15,7 +15,8 @@ public class NavigationLayout extends LinearLayout {
         LayoutInflater.from(context).inflate(R.layout.navigation, this);
         Button home = findViewById(R.id.home);
         Button saicheng = findViewById(R.id.saicheng);
-        Button team = findViewById(R.id.team);
+        Button qiuyuan = findViewById(R.id.qiuyuan);
+        Button qiuchang = findViewById(R.id.qiuchang);
         home.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,10 +32,18 @@ public class NavigationLayout extends LinearLayout {
             }
         });
 
-        team.setOnClickListener(new OnClickListener() {
+        qiuyuan.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "You clicked team",
+                Toast.makeText(getContext(), "You clicked qiuyuan",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        qiuchang.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "You clicked qiuchang",
                         Toast.LENGTH_SHORT).show();
             }
         });

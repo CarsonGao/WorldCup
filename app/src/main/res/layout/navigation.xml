@@ -6,39 +6,49 @@
     >
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/home"
-            android:layout_width="54dp"
-            android:layout_height="63dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/home" />
+                <Button
+                    android:id="@+id/home"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/shouye" />
 
-        <Button
-            android:id="@+id/saicheng"
-            android:layout_width="65dp"
-            android:layout_height="69dp"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/sc" />
+                <Button
+                    android:id="@+id/saicheng"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/saicheng" />
 
-        <Button
-            android:id="@+id/team"
-            android:layout_width="48dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/team" />
-    </LinearLayout>
+                <Button
+                    android:id="@+id/qiuyuan"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/qiuyuan" />
+
+                <Button
+                    android:id="@+id/qiuchang"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/qiuchang" />
+        </LinearLayout>
 
 </LinearLayout>
 
