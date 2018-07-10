@@ -12,7 +12,7 @@ public class NavigationLayout extends LinearLayout {
 
     public NavigationLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-        LayoutInflater.from(context).inflate(R.layout.navigation1, this);
+        LayoutInflater.from(context).inflate(R.layout.navigation, this);
         Button home = findViewById(R.id.home);
         Button saicheng = findViewById(R.id.saicheng);
         Button team = findViewById(R.id.team);
