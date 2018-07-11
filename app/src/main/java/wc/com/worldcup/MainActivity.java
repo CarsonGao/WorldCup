@@ -74,7 +74,7 @@ public class MainActivity extends BaseActivity {
         //添加图片到图片列表里
         mImageList = new ArrayList<>();
         ImageView iv;
-        for (int i = 0; i < mImageList.size(); i++) {
+        for (int i = 0; i < imageRess.length; i++) {
             iv = new ImageView(this);
             iv.setBackgroundResource(imageRess[i]);//设置图片
             iv.setId(imga_ids[i]);//顺便给图片设置id
@@ -94,19 +94,20 @@ public class MainActivity extends BaseActivity {
 
         @Override
         public void onClick(View v) {
+
             switch (v.getId()) {
-                case R.id.pager_image1:
-                    Toast.makeText(MainActivity.this, "图片1被点击", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.pager_image2:
-                    Toast.makeText(MainActivity.this, "图片2被点击", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.pager_image3:
-                    Toast.makeText(MainActivity.this, "图片3被点击", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.pager_image4:
-                    Toast.makeText(MainActivity.this, "图片4被点击", Toast.LENGTH_SHORT).show();
-                    break;
+            case R.id.pager_image1:
+                Toast.makeText(MainActivity.this, "图片1被点击", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.pager_image2:
+                Toast.makeText(MainActivity.this, "图片2被点击", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.pager_image3:
+                Toast.makeText(MainActivity.this, "图片3被点击", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.pager_image4:
+                Toast.makeText(MainActivity.this, "图片4被点击", Toast.LENGTH_SHORT).show();
+                break;
             }
         }
     }
@@ -153,11 +154,11 @@ public class MainActivity extends BaseActivity {
      * 第四步：设置刚打开app时显示的图片和文字
      */
     private void setFirstLocation() {
-        //mTvPagerTitle.setText(mImageTitles[previousPosition]);
+        mTvPagerTitle.setText(mImageTitles[previousPosition]);
         // 把ViewPager设置为默认选中Integer.MAX_VALUE / t2，从十几亿次开始轮播图片，达到无限循环目的;
-        //int m = (Integer.MAX_VALUE / 2) % mImageList.size();
-        //int currentPosition = Integer.MAX_VALUE / 2 - m;
-        //mViewPager.setCurrentItem(currentPosition);
+        int m = (Integer.MAX_VALUE / 2) % mImageList.size();
+        int currentPosition = Integer.MAX_VALUE / 2 - m;
+        mViewPager.setCurrentItem(currentPosition);
     }
 
     /**

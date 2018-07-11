@@ -8,7 +8,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
 
         <!--垂直线性布局方式-->
 
@@ -19,64 +22,75 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
+
                 <wc.com.worldcup.TitleLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="0dp"
-                android:layout_height="200dp" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
 
-                <android.support.v4.view.ViewPager
-                    android:id="@+id/viewPager"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="8dp"/>
+                    android:layout_height="159dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="Suspicious0dp">
 
-                <LinearLayout
-                    android:weightSum="10"
-                    android:background="#33000000"
-                    android:orientation="horizontal"
-                    android:layout_gravity="bottom"
-                    android:gravity="center_vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dip">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="0dp" />
 
-                    <TextView
-                        android:layout_weight="8"
-                        android:id="@+id/tv_pager_title"
-                        android:text="很长的标题。。。。。你懂我意思吧"
-                        android:paddingLeft="8dip"
-                        android:gravity="center_vertical"
-                        android:textColor="#fff"
-                        android:layout_width="0dp" android:layout_height="35dip"/>
-                    <!--用来动态添加轮播小点-->
                     <LinearLayout
-                        android:id="@+id/lineLayout_dot"
-                        android:layout_weight="2"
-                        android:gravity="center|right"
-                        android:layout_marginRight="5dp"
-                        android:paddingLeft="3dp"
-                        android:paddingRight="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="130dp"
+                        android:background="#33000000"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
-                        android:layout_width="0dp" android:layout_height="match_parent">
+                        android:weightSum="10">
+
+                        <!--用来动态添加轮播小点-->
+                        <TextView
+                            android:id="@+id/tv_pager_title"
+                            android:layout_width="91dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="8"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="8dip"
+                            android:text="很长的标题。。。。。你懂我意思吧"
+                            android:textColor="#fff" />
+
+                        <LinearLayout
+                            android:id="@+id/lineLayout_dot"
+                            android:layout_width="55dp"
+                            android:layout_height="11dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2"
+                            android:gravity="center|right"
+                            android:orientation="horizontal"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp" />
+
                     </LinearLayout>
 
-                </LinearLayout>
+                </FrameLayout>
 
-            </FrameLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30pt"
-                android:orientation="horizontal"
-                android:background="@drawable/bottom">
+                android:background="@drawable/bottom"
+                android:orientation="horizontal">
 
                 <wc.com.worldcup.NavigationLayout
                     android:layout_width="match_parent"
